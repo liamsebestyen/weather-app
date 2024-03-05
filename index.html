@@ -4,42 +4,37 @@
 <style>
     .greeting {
         color: rgb(76, 76, 221);
-        font-family: times;
+        font-family: sans-serif;
         font-weight: bold;
         text-align: center;
     }
-    form {
-        color: rgb(76, 76, 221);
-        background-color: whitesmoke;
-        width: 300px;
-        height: 44px;
-        border-radius: 5px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        }
+  
     
-    input {
-    all: unset;
-    font: 16px system-ui;
+    .searchBar {
+    /*font: 16px system-ui;
     color: rgb(0,0,0);
     height: 100%;
     width: 100%;
     padding: 6px 10px;
-    margin: 2px;
+    margin: 2px;*/
+    font-family: sans-serif;
+    font-size: 24px;
+    padding: 4px;
+    text-align: center;
+    color: black;
+    border-color: rgb(76, 76, 221);
     }
     
+    ::placeholder {
+    color: black;
+    opacity: 1; /* Firefox users */
+}
 </style>
     <body>
- <h1 class = "greeting"> Welcome to Liam's Weather App</h1>
+ <h1 class = "greeting"> Welcome to FairWeather</h1>
 
 
- <form id="form" role="search">
-    <input type="search" id="query" name="q"
-     placeholder="Search"
-     aria-label="Search through site content">
-    <button>Search</button>
-  </form>
+    <input class = "searchBar" type ="text" placeholder="Discover the weather"> 
 
     </body>
 </html>
