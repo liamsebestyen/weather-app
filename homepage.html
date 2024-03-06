@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> FairWeather</title>
+    </head>
+
+    <style>
+        @font-face {
+            font-family: Lavone;
+            src: url(lavone.ttf);
+            }
+         body {
+            height: 100vh;
+            background-image: linear-gradient(rgba(76, 76, 221, 0.7), rgba(76, 76, 221, 0.7)), url('background.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            font-family: Lavone;
+            text-align: center;
+            }
+
+        .greeting {
+        color:white;
+        font-family: Lavone;
+        font-weight: bold;
+        text-align: center;
+        font-size: 56px;
+
+    }
+        .message {
+            font-family: Lavone;
+            font-weight: bold;
+            text-align: center;
+            font-size: 24px;
+        }
+        #searchBar input[type="text"] {
+            padding: 15px;
+            border-radius: 25px; /* Apply border-radius to make the search bar rounded */
+            border: 1px solid white;
+            margin-right: 5px;
+            width: 200px;
+            background-color:rgba(76, 76, 221, 0.7); /* Semi-transparent white background for the search bar */
+            color: white;
+            font-family: Lavone;
+            vertical-align: middle;
+
+}
+
+        #searchBar button {
+            padding: 8px 20px; /* Increase padding for larger size */
+            border-radius: 25px; /* Use a higher border-radius value for rounder corners */
+            font-size: 16px; /* Adjust font size if needed */
+            background-color: rgba(76, 76, 221, 0.7); /* Semi-transparent white background for the search bar */
+            border: 1px solid white;
+            color: white;
+            font-family: Lavone;
+            font-size: 18px;
+            vertical-align: middle;
+
+        }
+
+        ::placeholder{
+            color:whitesmoke;
+        }
+
+    </style>
+
+    <body>
+        <h1 class = "greeting"> Welcome to FairWeather</h1>
+        <p class = "message"> Search your favourite destination below</p>
+
+        <div>
+            <form id="searchBar">
+                <input type="text" id="searchInput" placeholder="Search">
+                <button type="submit">  &#9728;  &#9729; </button>
+            </form>
+
+
+
+            </form>
+        </div>
+
+
+    </body>
+</html>
