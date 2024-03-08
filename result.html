@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FairWeather</title>
+    </head>
+
+    <style>
+        @font-face {
+            font-family: Lavone;
+            src: url(lavone/lavone.ttf);
+            }
+         body {
+            height: 100vh;
+            background-image: linear-gradient(rgba(76, 76, 221, 0.7), rgba(76, 76, 221, 0.7)), url('background.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            font-family: sans-serif;
+            text-align: center;
+            }
+            p {
+            font-family: sans-serif;
+            font-weight: bold;
+            text-align: center;
+            font-size: 24px;
+            }
+            .weatherImage-container {
+                    max-width: 200px;
+                    margin: 0 auto;
+                    text-align: center;
+                    display: block;
+             }
+            .weatherImage {
+                    max-width: 100%; 
+                    max-height: 150px; 
+                    object-fit: contain;
+                    
+        }
+        .cityName {
+            font-family: sans-serif;
+            font-weight: bold;
+            text-align: center;
+            font-size: 24px;
+            padding-bottom: 10px;
+        }
+        div {
+            font-family: sans-serif;
+            font-weight: bold;
+            text-align: center;
+            font-size: 24px;
+        }
+    </style>
+    <body>
+        <p> Weather Today</p>
+        <div id="cityName" class = "cityName"></div>
+        <div id = "current"> </div>
+        <div id = "summary"></div>
+        <div class = "weatherImage-container">
+            <img id = 'weatherImage' class = "weatherImage">
+        </div>
+       
+    </body>
+<script src="result.js"></script>
+</html>
